@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arizonia&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/091cd25d33.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!------- HEADER -------->
+    <header id="header">
+        <div class="container">
+
+            <nav class="nav">
+                <h1></h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+
+                <h1>Hi, <br>I'm <span>Levi</span></h1>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!------- ABOUT -------->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+
+                    <img src="images/levi.jpg" alt="">
+
+                </div>
+                <div class="about-col-2">
+                    <h2 class="sub-title">About Me</h2>
+                    <p class="sub-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus deserunt
+                        similique eius nam sequi
+                        ut in inventore est dolor at neque facilis, molestiae a voluptatum. Ab sit sed quibusdam
+                        eligendi.
+                        Accusantium, minus! Quam enim voluptate facere nam, unde omnis corporis quia. Ab odit voluptatem
+                        rum architecto nesciunt! Deleniti deserunt repudiandae,
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links " onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+
+                        <div class="skills">
+
+                            <div class="details">
+                                <span>HTML, CSS & JavaScript</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="bar">
+                                <div class="html-bar"></div>
+                            </div>
+                        </div>
+
+                        <div class="details">
+                            <span>React & NodeJs</span>
+                            <span>20%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="react-node-bar"></div>
+                        </div>
+
+                        <div class="details">
+                            <span>MySQL</span>
+                            <span>20%</span>
+                        </div>
+                        <div class="bar">
+                            <div class="mysql-bar"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span> <br> Lorem ipsum, dolor sit amet</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Jensen YH</span> <br> 2021 - 2023 / Gothenburg, SWE</li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!------- SERVICES -------->
+    <section id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Lorem Ipsum</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint beatae quod laudantium explicabo
+                        quia suscipit esse illo maiores recusandae numquam.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Lorem Ipsum</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint beatae quod laudantium explicabo
+                        quia suscipit esse illo maiores recusandae numquam.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Lorem Ipsum</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint beatae quod laudantium explicabo
+                        quia suscipit esse illo maiores recusandae numquam.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!------- PORTFOLIO -------->
+
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint beatae quod laudantium
+                            explicabo
+                            quia suscipit esse illo maiores recusandae numquam.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint beatae quod laudantium
+                            explicabo
+                            quia suscipit esse illo maiores recusandae numquam.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Lorem Ipsum</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint beatae quod laudantium
+                            explicabo
+                            quia suscipit esse illo maiores recusandae numquam.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </section>
+
+    <!------- CONTACT -------->
+
+    <section id="contact">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> <a href="mailto:">vojtechlevi1@gmail.com</a> </p>
+                    <p><i class="fa-solid fa-square-phone"></i> <a class="phone" href="tel:(+46)736126225">(+46)
+                            736126225</a></p>
+
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/levi-ekström-3bbb9b223"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/vojtechlevi"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/vl.codes/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form action="mailto:vojtechlevi1@gmail.com" method="post" enctype="multipart/form-data">
+                        <input type="text" name="name" placeholder="Your Name" autocomplete="off" required>
+                        <input type="email" name="email" placeholder="Your Email" autocomplete="off" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2" value="send">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Levi.</p>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
