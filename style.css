@@ -120,7 +120,6 @@ body {
 }
 
 .about-col-2 {
-
     flex-basis: 50%;
     height: 400px;
 }
@@ -206,7 +205,6 @@ body {
 .bar {
     width: 50%;
     position: relative;
-
     border-radius: 20px;
     margin-bottom: 1rem;
 }
@@ -216,7 +214,6 @@ body {
     width: 0;
     height: 4px;
     border-radius: 10px;
-
     border-right-color: #ff004f;
     background-color: #ff004f;
 }
